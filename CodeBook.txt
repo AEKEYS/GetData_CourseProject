@@ -1,0 +1,27 @@
+This file describes the column labels in myTidyData.txt.
+
+The following measurements come from accelerometer and gyroscope 3-axial signals captured and processed from a smartphone.  Each have X, Y, and Z directions and were summarized by taking the mean and standard deviation of each (42 variables of the pattern “tGravityAcc.mean…X”).
+
+                  "tGravityAcc",
+                  "tBodyAccJerk",
+                  "tBodyGyro",
+                  "tBodyGyroJerk",
+                  "fBodyAcc",
+                  "fBodyAccJerk",
+                  "fBodyGyro")
+
+There are eight (8) additional  variables that have mean and standard deviation calculations but no corresponding axial direction.  They take the pattern “tGravityAccMag.mean..” and are:
+
+                   "tGravityAccMag",
+                   "tBodyAccJerkMag",
+                   "tBodyGyroMag",
+                   "tBodyGyroJerkMag",
+                   "fBodyAccMag",
+                   "fBodyBodyAccJerkMag", 
+                   "fBodyBodyGyroMag", 
+                   "fBodyBodyGyroJerkMag"
+
+Finally there are two additional variables used for identifying the subject and their corresponding activity while moving with the smartphone.  These are:
+
+                   “subject”
+                   “activity”
