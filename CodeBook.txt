@@ -1,6 +1,6 @@
 This file describes the column labels in myTidyData.txt.
 
-The following measurements come from accelerometer and gyroscope 3-axial signals captured and processed from a smartphone.  Each have X, Y, and Z directions and were summarized by taking the mean and standard deviation of each (42 variables of the pattern “tGravityAcc.mean…X”).
+The following measurements come from accelerometer and gyroscope 3-axial signals captured and processed from a smartphone.  Each have X, Y, and Z directions and were summarized by taking the mean and standard deviation of each (42 variables of the pattern “tGravityAcc.mean…X”). For details on the units, see the bottom of this file (excerpt from original UCI CodeBook, which downloads when user executes "getData" in the run_analysis.R file that accompanies this text file)
 
                   "tGravityAcc",
                   "tBodyAccJerk",
@@ -21,7 +21,16 @@ There are eight (8) additional  variables that have mean and standard deviation 
                    "fBodyBodyGyroMag", 
                    "fBodyBodyGyroJerkMag"
 
-Finally there are two additional variables used for identifying the subject and their corresponding activity while moving with the smartphone.  These are:
+Finally there are two additional variables used for identifying the subject (30 different people) and their corresponding activity (6 different types of activity) while moving with the smartphone.  These are:
 
-                   “subject”
-                   “activity”
+                   “subject” 1:6
+                   “activity” (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+
+
+Excerpt from UCI's "features_info.txt" that describes the units of the measurements.
+
+"These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+"Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+"Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 

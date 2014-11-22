@@ -19,3 +19,12 @@ The task was to:
 - 'run_analysis.R': an R script that performs the getting and cleaning operations.  
 - 'myTidyData.txt': Tidy Data as output by run_analysis.R
 - 'CodeBook.txt': file describing the variables in the generated Tidy Data.
+
+#How it works
+The run_analysis.R walks the user step-by-step through the process of downloading the original zip file, unpacking it, and loading the appropriate files.
+
+Then, the script joins and labels multiple text files to create one data frame.
+
+Next, the script selects only those variables from the original data that have mean and standard deviation measurements. This "down selected" data frame is then melted into a tidy data frame where each row is an observation and each column represents one variable.  
+
+This "molten" data frame is then recast into an exportable tidy data text file ("myTidyData.txt") that groups the data by subject and activity.  The values are the average of each measurement.
